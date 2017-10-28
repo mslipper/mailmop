@@ -1,0 +1,23 @@
+@import 'root';
+
+.home {
+  -fx-background-color: $selection-blue;
+
+  .button {
+    $bg: desaturate(lighten($selection-blue, 10%), 2%);
+
+    -fx-background-color: $bg;
+    -fx-border-radius: 2px;
+    -fx-text-fill: white;
+    -fx-padding: 12px 12px;
+    -fx-font-weight: bold;
+
+    &:hover {
+      -fx-background-color: lighten($bg, 2%);
+    }
+
+    &:armed {
+      -fx-background-color: darken($bg, 5%);
+    }
+  }
+}

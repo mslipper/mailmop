@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<?import com.mslipper.mailmop.gui.FakeSenderList?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mslipper.mailmop.gui.HomeController">
+   <children>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane fx:id="splitPane" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" styleClass="main-split-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane fx:id="leftPane" minWidth="240" prefHeight="200.0" prefWidth="240.0" styleClass="left-pane">
+                     <children>
+                        <VBox fx:id="groupContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="logo-area">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="19.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0">
+                                       <image>
+                                          <Image url="@../images/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <AnchorPane prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                 <children>
+                                    <FakeSenderList AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="12.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="right-pane">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <VBox fx:id="progressContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" visible="false" StackPane.alignment="CENTER">
+                                 <children>
+                                    <ProgressBar fx:id="fetchProgress" prefWidth="200.0" progress="0.0" />
+                                    <Label fx:id="progressText" text="Processed page 1 of 1." />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="authContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" StackPane.alignment="CENTER">
+                                 <children>
+                                    <TextFlow fx:id="statusText" styleClass="instruction-label">
+                                       <VBox.margin>
+                                          <Insets bottom="24.0" />
+                                       </VBox.margin>
+                                    </TextFlow>
+                                    <Button fx:id="actionButton" mnemonicParsing="false" styleClass="action-button" text="Sign In" />
+                                 </children></VBox>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/results.css" />
+   </stylesheets>
+</VBox>

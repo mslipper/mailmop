@@ -1,0 +1,208 @@
+.root {
+  -fx-font-smoothing: lcd; }
+
+.tab, .tab-container, .tab-header-background {
+  -fx-background-color: white; }
+
+.tab-header-area {
+  -fx-padding: 0 0 0 12; }
+
+.tab {
+  -fx-padding: 0 8 3 8; }
+  .tab .focus-indicator {
+    -fx-background-color: transparent;
+    -fx-border-width: 0 !important; }
+
+.tab-label {
+  -fx-font-weight: bold; }
+
+.tab:selected {
+  -fx-border-color: #5949FF;
+  -fx-border-width: 0 0 3 0;
+  -fx-padding: 0 8; }
+
+.scroll-pane {
+  -fx-background-color: transparent;
+  -fx-faint-focus-color: transparent; }
+
+.column-header-background {
+  visibility: hidden;
+  -fx-padding: -1em; }
+
+.grouping-choice {
+  -fx-border-width: 0 0 1px 0;
+  -fx-border-color: rgba(255, 255, 255, 0.12); }
+
+.scroll-bar:horizontal,
+.scroll-bar:vertical {
+  -fx-padding: 0; }
+
+.increment-arrow,
+.decrement-arrow {
+  -fx-padding: 0; }
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+  -fx-background-color: transparent;
+  -fx-border-color: transparent;
+  -fx-background-radius: 0em; }
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+  -fx-background-color: #6e6e6e;
+  -fx-background-radius: 5em; }
+
+.corner {
+  -fx-background-color: transparent; }
+
+.scroll-pane .corner {
+  -fx-background-color: #1d3049; }
+
+.big-blue-header {
+  -fx-background-color: #15a4fa;
+  -fx-border-color: transparent transparent #009bf8 transparent;
+  -fx-border-width: 0 0 1 0; }
+
+.logo-area {
+  -fx-background-color: white; }
+
+.main-split-pane {
+  -fx-padding: 0;
+  -fx-background-color: white; }
+  .main-split-pane *.split-pane-divider {
+    -fx-background-color: #f7f7f7;
+    -fx-background-image: url("../images/shadow.png");
+    -fx-background-repeat: repeat-y;
+    -fx-border-color: transparent;
+    -fx-padding: 0 3 0 0; }
+
+.left-pane {
+  -fx-background-color: #0a0d1b; }
+  .left-pane .corner {
+    -fx-background-color: #0a0d1b; }
+  .left-pane .tool-bar {
+    -fx-background-color: #0a0d1b; }
+  .left-pane .group-list {
+    -fx-background-color: #0a0d1b;
+    -fx-padding: 0; }
+  .left-pane .scroll-bar:horizontal,
+  .left-pane .scroll-bar:vertical {
+    -fx-background-color: #0a0d1b; }
+  .left-pane .list-cell {
+    -fx-background-color: #0a0d1b;
+    -fx-pref-height: 40px; }
+    .left-pane .list-cell .text {
+      -fx-text-fill: #ceced1;
+      -fx-fill: #ceced1;
+      -fx-font-size: 14px; }
+    .left-pane .list-cell .text-small {
+      -fx-font-size: 12px !important; }
+    .left-pane .list-cell:hover {
+      -fx-background-color: #171927; }
+    .left-pane .list-cell:filled:selected, .left-pane .list-cell:filled:selected:focused {
+      -fx-background-color: #232633;
+      -fx-border-width: 0 0 0 3px;
+      -fx-border-color: #5b51ff; }
+      .left-pane .list-cell:filled:selected .text, .left-pane .list-cell:filled:selected:focused .text {
+        -fx-text-fill: white;
+        -fx-fill: white;
+        -fx-font-size: 14px; }
+
+.right-pane {
+  -fx-background-color: #f7f7f7; }
+  .right-pane .tool-bar {
+    -fx-background-color: white; }
+  .right-pane .scroll-bar:horizontal,
+  .right-pane .scroll-bar:vertical {
+    -fx-background-color: white; }
+  .right-pane .table-view, .right-pane .table-view:focused {
+    -fx-padding: 1 0 0 0;
+    -fx-background-color: #f7f7f7;
+    -fx-background-insets: 0, 1; }
+  .right-pane .column-header-background, .right-pane .filler {
+    -fx-background-color: #1e3550; }
+  .right-pane .column-header {
+    -fx-background-color: transparent;
+    -fx-border-color: #253a57;
+    -fx-table-cell-border-color: #253a57;
+    -fx-border-width: 0 1 1 0; }
+  .right-pane .table-view .column-header .label {
+    -fx-text-fill: #333;
+    -fx-fill: #333;
+    -fx-font-size: 14px; }
+  .right-pane .table-row-cell {
+    -fx-border-width: 0; }
+  .right-pane .right .text, .right-pane .right {
+    -fx-alignment: center-right; }
+  .right-pane .table-row-cell .text {
+    -fx-text-fill: #333;
+    -fx-fill: #333;
+    -fx-font-size: 14px; }
+  .right-pane .table-row-cell:odd {
+    -fx-background-color: white;
+    -fx-border-color: white;
+    -fx-table-cell-border-color: white; }
+    .right-pane .table-row-cell:odd:filled:selected:focused, .right-pane .table-row-cell:odd:filled:selected {
+      -fx-background-color: white;
+      -fx-border-color: white;
+      -fx-table-cell-border-color: white; }
+  .right-pane .table-row-cell:even {
+    -fx-background-color: #f7f7f7;
+    -fx-border-color: #f7f7f7;
+    -fx-table-cell-border-color: #f7f7f7; }
+    .right-pane .table-row-cell:even:filled:selected:focused, .right-pane .table-row-cell:even:filled:selected {
+      -fx-background-color: #f7f7f7;
+      -fx-border-color: #f7f7f7;
+      -fx-table-cell-border-color: #f7f7f7; }
+  .right-pane .check-box:disabled {
+    -fx-opacity: 1; }
+  .right-pane .check-box .box {
+    -fx-background-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: #979797;
+    -fx-border-radius: 2px; }
+
+.button {
+  -fx-background-color: #f4f4f4;
+  -fx-text-fill: #2b2b2b;
+  -fx-border-width: 1px;
+  -fx-border-color: #c9c9c9;
+  -fx-border-radius: 3px; }
+
+.button {
+  -fx-text-fill: #333;
+  -fx-fill: #333;
+  -fx-font-size: 14px;
+  -fx-font-weight: 700; }
+
+.action-button {
+  -fx-background-color: #5949FF !important;
+  -fx-text-fill: white;
+  -fx-border-color: transparent;
+  -fx-padding: 12px 0;
+  -fx-background-radius: 50;
+  -fx-min-width: 150px; }
+
+.selection-prompt-label {
+  -fx-text-fill: rgba(255, 255, 255, 0.78); }
+
+.choice-box {
+  -fx-border-width: 1px;
+  -fx-border-color: white;
+  -fx-border-radius: 3px;
+  -fx-background-color: #0a0d1b; }
+  .choice-box .text {
+    -fx-text-fill: white;
+    -fx-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-background-color: transparent; }
+  .choice-box .context-menu {
+    -fx-background-color: #11162e;
+    -fx-background-radius: 3px;
+    -fx-padding: 2px; }
+  .choice-box .menu-item:focused {
+    -fx-background-radius: 1px;
+    -fx-background-color: #15a4fa; }
+  .choice-box .arrow {
+    -fx-background-color: rgba(255, 255, 255, 0.87); }

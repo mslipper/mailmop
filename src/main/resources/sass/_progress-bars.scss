@@ -1,0 +1,8 @@
+.progress-bar > .track {
+  -fx-background-color: darken($selection-blue, 15%);
+}
+
+.progress-bar > .bar {
+  -fx-background-color: $selection-blue;
+  -fx-background-insets: 2;
+}

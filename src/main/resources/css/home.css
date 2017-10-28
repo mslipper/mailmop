@@ -1,0 +1,12 @@
+.home {
+  -fx-background-color: #15a4fa; }
+  .home .button {
+    -fx-background-color: #49b7f9;
+    -fx-border-radius: 2px;
+    -fx-text-fill: white;
+    -fx-padding: 12px 12px;
+    -fx-font-weight: bold; }
+    .home .button:hover {
+      -fx-background-color: #53bbfa; }
+    .home .button:armed {
+      -fx-background-color: #30adf8; }

@@ -1,0 +1,10 @@
+@import 'root';
+@import 'progress-bars';
+
+.gmail {
+  -fx-background-color: $selection-blue;
+
+  .label {
+    @include data-text();
+  }
+}

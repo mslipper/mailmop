@@ -1,0 +1,83 @@
+/*
+Error: Undefined mixin 'data-text'.
+        on line 8 of src/main/resources/sass/gmail.scss, in `data-text'
+        from line 8 of src/main/resources/sass/gmail.scss
+
+3: 
+4: .gmail {
+5:   -fx-background-color: $selection-blue;
+6: 
+7:   .label {
+8:     @include data-text();
+9:   }
+10: }
+
+Backtrace:
+src/main/resources/sass/gmail.scss:8:in `data-text'
+src/main/resources/sass/gmail.scss:8
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:352:in `block in visit_mixin'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:98:in `block in with_mixin'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:98:in `with_mixin'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:350:in `visit_mixin'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block (2 levels) in visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `map'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:444:in `block in visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:442:in `visit_rule'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `block in visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `block in with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:135:in `with_frame'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/stack.rb:79:in `with_base'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:162:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:171:in `block in visit_children'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:183:in `with_environment'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:170:in `visit_children'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:190:in `visit_root'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:161:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/visitors/perform.rb:10:in `visit'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/tree/root_node.rb:20:in `render'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/engine.rb:290:in `render'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:464:in `update_stylesheet'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-3.5.2/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
+/Users/matthewslipper/.rvm/gems/ruby-2.4.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'data-text'.\A         on line 8 of src/main/resources/sass/gmail.scss, in `data-text'\A         from line 8 of src/main/resources/sass/gmail.scss\A \A 3: \A 4: .gmail {\A 5:   -fx-background-color: $selection-blue;\A 6: \A 7:   .label {\A 8:     @include data-text();\A 9:   }\A 10: }"; }

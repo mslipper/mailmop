@@ -1,0 +1,16 @@
+$selection-blue: #15a4fa;
+$black: #2b2b2b;
+$white: white;
+$off-white: #f7f7f7;
+
+@mixin data-text-black() {
+  -fx-text-fill: #333;
+  -fx-fill: #333;
+  -fx-font-size: 14px;
+}
+
+@mixin data-text-white() {
+  -fx-text-fill: $white;
+  -fx-fill: $white;
+  -fx-font-size: 14px;
+}

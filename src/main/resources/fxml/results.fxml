@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import java.net.URL?>
+
+<VBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mslipper.mailmop.gui.ResultsController">
+   <children>
+      <AnchorPane VBox.vgrow="ALWAYS">
+         <children>
+            <SplitPane fx:id="splitPane" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="800.0" styleClass="main-split-pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <items>
+                  <AnchorPane fx:id="leftPane" minWidth="150" prefHeight="200.0" prefWidth="240.0" styleClass="left-pane">
+                     <children>
+                        <VBox fx:id="groupContainer" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane prefHeight="100.0" prefWidth="200.0" styleClass="logo-area">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="19.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="20.0">
+                                       <image>
+                                          <Image url="@../images/logo.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                              <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" VBox.vgrow="ALWAYS">
+                                <tabs>
+                                  <Tab text="EMAILS">
+                                       <content>
+                                          <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <children>
+                                                      <HBox styleClass="grouping-choice">
+                                                         <children>
+                                                            <ChoiceBox fx:id="groupingChoice" prefWidth="175.0" />
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+                                                         </padding>
+                                                      </HBox>
+                                                      <AnchorPane prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+                                                         <children>
+                                                            <ScrollPane fx:id="groupScroll" fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                               <content>
+                                                                  <AnchorPane minHeight="0.0" minWidth="0.0">
+                                                                     <children>
+                                                                        <ListView fx:id="groupListView" layoutX="-6.0" styleClass="group-list" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                                     </children>
+                                                                  </AnchorPane>
+                                                               </content>
+                                                            </ScrollPane>
+                                                         </children>
+                                                      </AnchorPane>
+                                                   </children>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                       </content>
+                                  </Tab>
+                                  <Tab text="ACTIVITY">
+                                    <content>
+                                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <ScrollPane fitToHeight="true" fitToWidth="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                                         <children>
+                                                            <ListView fx:id="activityListView" prefHeight="200.0" prefWidth="200.0" styleClass="group-list" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </ScrollPane>
+                                             </children>
+                                          </AnchorPane>
+                                    </content>
+                                  </Tab>
+                                </tabs>
+                              </TabPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="rightPane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" styleClass="right-pane">
+                     <children>
+                        <StackPane prefHeight="150.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane fx:id="tableContainer">
+                                 <children>
+                                    <VBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <children>
+                                          <ToolBar prefHeight="40.0" prefWidth="200.0" styleClass="sub-toolbar">
+                                             <items>
+                                                <Button mnemonicParsing="false" onAction="#onClickSelectAll" text="Select All" />
+                                                <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#onClickDelete" text="Delete" />
+                                             </items>
+                                          </ToolBar>
+                                          <AnchorPane VBox.vgrow="ALWAYS">
+                                             <children>
+                                                <TableView fx:id="messageTableView" prefHeight="200.0" prefWidth="200.0" styleClass="nofocus" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                   <columns>
+                                                      <TableColumn prefWidth="75.0" text="Checkbox" />
+                                                      <TableColumn prefWidth="75.0" text="Sender" />
+                                                      <TableColumn prefWidth="75.0" text="Subject" />
+                                                      <TableColumn prefWidth="75.0" text="Date" />
+                                                   </columns>
+                                                </TableView>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </VBox>
+                                 </children>
+                              </AnchorPane>
+                              <ImageView fx:id="exampleImage" fitHeight="219.0" fitWidth="236.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../images/sender-selection-example.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </StackPane>
+                     </children>
+                  </AnchorPane>
+               </items>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../css/results.css" />
+   </stylesheets>
+</VBox>
