@@ -69,7 +69,7 @@ public class GmailService implements EmailService {
                         @ForkJoin TaskExecutor taskExecutor) {
         Map<String, String> paramsMap = application.getParameters().getNamed();
         maxMessages = paramsMap.containsKey("maxMessages") ?
-            Integer.parseInt(paramsMap.get("maxMessages")) : 300;
+            Integer.parseInt(paramsMap.get("maxMessages")) : 100000;
 
         this.taskExecutor = taskExecutor;
         this.gmailConfigFile = Util.loadResourceAsFile("client_id.json");
